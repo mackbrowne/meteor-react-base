@@ -3,6 +3,7 @@ import { _ } from 'meteor/underscore';
 import classnames from 'classnames';
 import i18n from 'meteor/universe:i18n';
 import BaseComponent from './BaseComponent.jsx';
+import Counter from '../components/Counter.jsx';
 import { displayError } from '../helpers/errors.js';
 
 import {
@@ -52,6 +53,7 @@ export default class TodoItem extends BaseComponent {
   deleteTodo() {
     remove.call({ todoId: this.props.todo._id }, displayError);
   }
+  // Could add a function to check timer for 0:0:0:0 to mark checked on listItem
 
   render() {
     const { todo, editing } = this.props;
@@ -82,6 +84,7 @@ export default class TodoItem extends BaseComponent {
           onBlur={this.onBlur}
           onChange={this.updateTodo}
         />
+        <Counter />
         <a
           className="delete-item"
           href="#delete"
@@ -99,4 +102,6 @@ TodoItem.propTypes = {
   todo: React.PropTypes.object,
   editing: React.PropTypes.bool,
   onEditingChange: React.PropTypes.func,
+  endTime: React.PropTypes.object,
+  newEndTime: React.PropTypes.object
 };

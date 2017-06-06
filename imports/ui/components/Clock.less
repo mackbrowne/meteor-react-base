@@ -1,0 +1,26 @@
+
+.time-clock {
+	display: inline-block;
+	font-size: 10px;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	.time-left {
+		&__days, &__hours, &__minutes, &__seconds {
+			font-weight: bold;
+			width: inherit;
+			display: inline-block;
+			padding-right: 0.5em;
+		}
+	}
+}
+
+@media only screen and (max-width:640px) {
+  .time-clock {
+  	font-size: .6rem;
+  }
+}
+@media only screen and (max-width:330px) {
+  .time-clock {
+  	font-size: .5rem;
+  }
+}
