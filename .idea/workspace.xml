@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51ae131e-2662-4d59-9cad-1231dcba7bbe" name="Default" comment="" />
+    <ignored path="meteor-react-base.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="meteor-react-base" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ListHeader.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/ListHeader.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.2217822">
+              <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="thagee" />
+        <option value="thageesan@gmail.com" />
+        <option value="thageesan" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="mackbrowne" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="meteor-react-base" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/imports/api/todos/todos.js" />
+        <option value="$PROJECT_DIR$/imports/startup/server/fixtures.js" />
+        <option value="$PROJECT_DIR$/imports/ui/stylesheets/util/variables.less" />
+        <option value="$PROJECT_DIR$/imports/ui/components/TodoItem.jsx" />
+        <option value="$PROJECT_DIR$/imports/api/todos/methods.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/TodoItem.less" />
+        <option value="$PROJECT_DIR$/imports/ui/components/ListHeader.less" />
+        <option value="$PROJECT_DIR$/imports/ui/components/ListHeader.jsx" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="containers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="startup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="startup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meteor-react-base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51ae131e-2662-4d59-9cad-1231dcba7bbe" name="Default" comment="" />
+      <created>1497030470656</created>
+      <option name="number" value="Default" />
+      <updated>1497030470656</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added the ability to set priority to todo items.  Each todo item has the priority of low, medium, high.  You can create to do items with these priorities.  You can update the priority of a todo item as well.">
+      <created>1497047144240</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1497047144240</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756326" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756326" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32756326" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added the ability to set priority to todo items.  Each todo item has the priority of low, medium, high.  You can create to do items with these priorities.  You can update the priority of a todo item as well." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ability to set priority to todo items.  Each todo item has the priority of low, medium, high.  You can create to do items with these priorities.  You can update the priority of a todo item as well." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="5:568" placeholder="..." />
+            <marker date="1497047547000" expanded="true" signature="576:607" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="0:21" placeholder="/*...*/" />
+            <marker date="1497047547000" expanded="true" signature="233:256" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="0:17" placeholder="/*...*/" />
+            <marker date="1497047547000" expanded="true" signature="18:50" placeholder="/*...*/" />
+            <marker date="1497047547000" expanded="true" signature="61:270" placeholder="{&quot;name&quot;: 'Todos'...}" />
+            <marker date="1497047547000" expanded="true" signature="284:711" placeholder="{&quot;iphone&quot;: 'resources/icons/icon-60x60.png'...}" />
+            <marker date="1497047547000" expanded="true" signature="733:1708" placeholder="{&quot;iphone&quot;: 'resources/splash/splash-320x480.png'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/languages/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="105:300" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="342:438" placeholder="{&quot;name&quot;: 'languages.getAll'...}" />
+            <marker date="1497047547000" expanded="true" signature="398:435" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/UserMenu.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="60:736" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="207:212" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="242:734" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="414:601" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="457:595" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="647:730" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/UserMenu.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.55445546">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="207:1572" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="230:356" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="370:458" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="415:452" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="479:1134" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="684:1123" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="729:952" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="979:1092" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1156:1463" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1177:1452" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1213:1323" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1332:1439" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1476:1570" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1660:1662" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/ListPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.829703">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="391:1585" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="414:564" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="597:670" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="617:664" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="683:1583" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="808:846" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="896:1064" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="922:1049" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1070:1291" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1114:1275" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1312:1572" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1389:1559" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1742:1744" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/containers/AppContainer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.16435644">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="285:711" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="412:708" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="605:694" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="612:692" placeholder="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/generate-data.app-tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6613861">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="391:526" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="544:740" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="567:737" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="783:1112" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="787:946" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="1054:1074" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/lists/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497030467000" expanded="true" signature="0:42" placeholder="/*...*/" />
+            <marker date="1497030467000" expanded="true" signature="177:279" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="199:236" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="238:275" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="339:486" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="361:391" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="413:443" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="445:482" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/lists/lists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.609901">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="272:989" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="314:867" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="365:818" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="619:812" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="897:987" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1143:1233" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1269:1426" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1465:1659" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="1681:1730" placeholder="{&quot;name&quot;: 1...}" />
+            <marker date="1497047547000" expanded="true" signature="1783:2263" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1862:1893" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1916:2056" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2079:2169" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2103:2129" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2181:2260" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/lists/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.33267328">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="336:367" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="425:610" placeholder="{&quot;name&quot;: 'lists.insert'...}" />
+            <marker date="1497047547000" expanded="true" signature="480:526" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="494:521" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="559:607" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="661:1172" placeholder="{&quot;name&quot;: 'lists.makePrivate'...}" />
+            <marker date="1497047547000" expanded="true" signature="736:1169" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="760:886" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="962:1092" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1119:1163" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1222:1837" placeholder="{&quot;name&quot;: 'lists.makePublic'...}" />
+            <marker date="1497047547000" expanded="true" signature="1296:1834" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1320:1423" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1505:1636" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1642:1763" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="1789:1828" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1887:2468" placeholder="{&quot;name&quot;: 'lists.updateName'...}" />
+            <marker date="1497047547000" expanded="true" signature="1946:2012" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2054:2465" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2136:2267" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2273:2394" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="2421:2459" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2514:3110" placeholder="{&quot;name&quot;: 'lists.remove'...}" />
+            <marker date="1497047547000" expanded="true" signature="2584:3107" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2666:2795" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2801:2922" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="2957:3076" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3185:3251" placeholder="[...]" />
+            <marker date="1497047547000" expanded="true" signature="3284:3533" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3371:3520" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3388:3441" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/todos/incompleteCountDenormalizer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4950495">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497030467000" expanded="true" signature="194:1179" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="218:442" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="327:370" placeholder="{&quot;checked&quot;: false...}" />
+            <marker date="1497030467000" expanded="true" signature="468:508" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="548:899" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="765:895" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="839:853" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="903:1086" placeholder="//..." />
+            <marker date="1497030467000" expanded="true" signature="1113:1176" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/server/register-api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497030467000" expanded="true" signature="337:456" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/ListList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="0:18" placeholder="/*...*/" />
+            <marker date="1497047547000" expanded="true" signature="280:1506" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="303:382" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="402:710" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="511:667" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="528:661" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="564:593" placeholder="/*...*/" />
+            <marker date="1497047547000" expanded="true" signature="723:1504" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="778:1493" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="815:978" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1018:1468" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1529:1564" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1626:1628" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/Message.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="73:256" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="281:353" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/todos/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497030467000" expanded="true" signature="0:42" placeholder="/*...*/" />
+            <marker date="1497030467000" expanded="true" signature="298:947" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="319:354" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="444:944" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="457:804" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="479:568" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="577:695" placeholder="//..." />
+            <marker date="1497030467000" expanded="true" signature="718:755" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="821:939" placeholder="[...]" />
+            <marker date="1497030467000" expanded="true" signature="822:938" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="841:931" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/todos/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33267328">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="335:941" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="361:572" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="602:748" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="768:939" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1095:1185" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1221:1555" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1233:1312" placeholder="{&quot;denyUpdate&quot;: true...}" />
+            <marker date="1497047547000" expanded="true" signature="1322:1359" placeholder="{&quot;max&quot;: 100...}" />
+            <marker date="1497047547000" expanded="true" signature="1373:1432" placeholder="{&quot;max&quot;: 6...}" />
+            <marker date="1497047547000" expanded="true" signature="1447:1490" placeholder="{&quot;denyUpdate&quot;: true...}" />
+            <marker date="1497047547000" expanded="true" signature="1503:1552" placeholder="{&quot;defaultValue&quot;: false...}" />
+            <marker date="1497047547000" expanded="true" signature="1594:1788" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="1810:1882" placeholder="{&quot;listId&quot;: 1...}" />
+            <marker date="1497047547000" expanded="true" signature="1885:2077" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="2108:2124" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2277:2406" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2288:2332" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2355:2403" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/server/fixtures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.83168316">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <marker date="1497030467000" expanded="true" signature="232:245" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="268:1523" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="287:1108" placeholder="[...]" />
+            <marker date="1497030467000" expanded="true" signature="295:604" placeholder="{&quot;name&quot;: 'Meteor Principles'...}" />
+            <marker date="1497030467000" expanded="true" signature="347:595" placeholder="[...]" />
+            <marker date="1497030467000" expanded="true" signature="612:854" placeholder="{&quot;name&quot;: 'Languages'...}" />
+            <marker date="1497030467000" expanded="true" signature="656:845" placeholder="[...]" />
+            <marker date="1497030467000" expanded="true" signature="862:1101" placeholder="{&quot;name&quot;: 'Favorite Scientists'...}" />
+            <marker date="1497030467000" expanded="true" signature="916:1092" placeholder="[...]" />
+            <marker date="1497030467000" expanded="true" signature="1183:1298" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="1219:1297" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="1336:1351" placeholder="{...}" />
+            <marker date="1497030467000" expanded="true" signature="1359:1446" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/stylesheets/util/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7448747">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/stylesheets/utils.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i18n/en.i18n.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5882353">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="0:3206" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="18:961" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="36:116" placeholder="{&quot;logout&quot;: &quot;Logout&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="148:265" placeholder="{&quot;tryingToConnect&quot;: &quot;Trying to connect&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="285:693" placeholder="{&quot;deleteConfirm&quot;: &quot;Are you sure you want to delete the list&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="711:794" placeholder="{&quot;newList&quot;: &quot;New List&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="811:845" placeholder="{&quot;loading&quot;: &quot;Loading&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="865:902" placeholder="{&quot;showMenu&quot;: &quot;Show Menu&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="920:957" placeholder="{&quot;taskName&quot;: &quot;Task name&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="974:2012" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="996:1426" placeholder="{&quot;emailRequired&quot;: &quot;Email required&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="1450:1788" placeholder="{&quot;emailRequired&quot;: &quot;Email required&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="1806:1940" placeholder="{&quot;noTasks&quot;: &quot;No tasks here&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="1962:2008" placeholder="{&quot;pageNotFound&quot;: &quot;Page not found&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="2023:3204" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2038:2679" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2056:2088" placeholder="{&quot;list&quot;: &quot;List&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="2111:2257" placeholder="{&quot;notLoggedIn&quot;: &quot;Must be logged in to make private lists.&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="2279:2404" placeholder="{&quot;notLoggedIn&quot;: &quot;Must be logged in.&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="2426:2506" placeholder="{&quot;accessDenied&quot;: &quot;You don't have permission to edit this list.&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="2524:2673" placeholder="{&quot;accessDenied&quot;: &quot;'You don't have permission to remove this list.'&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="2694:3200" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2712:2800" placeholder="{&quot;accessDenied&quot;: &quot;Cannot add todos to a private list that is not yours&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="2828:2917" placeholder="{&quot;accessDenied&quot;: &quot;Cannot edit todos in a private list that is not yours&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="2939:3028" placeholder="{&quot;accessDenied&quot;: &quot;Cannot edit todos in a private list that is not yours&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="3046:3137" placeholder="{&quot;accessDenied&quot;: &quot;Cannot remove todos in a private list that is not yours&quot;...}" />
+            <marker date="1497047547000" expanded="true" signature="3153:3194" placeholder="{&quot;taskName&quot;: &quot;Task name&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/TodoItem.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33465347">
+          <caret line="112" column="12" selection-start-line="94" selection-start-column="8" selection-end-line="112" selection-end-column="12" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="408:3393" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="431:920" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="500:656" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="519:650" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="545:626" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="934:998" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1011:1076" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1106:1228" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1134:1222" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1250:1301" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1331:1443" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1359:1423" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1460:1529" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1542:3391" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1619:1695" placeholder="{&quot;list-item&quot;: true...}" />
+            <marker date="1497047547000" expanded="true" signature="1718:3380" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1754:2080" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="1823:2016" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="2089:2329" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="2416:2492" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="2502:2710" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="2719:2936" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="2945:3156" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="3165:3367" placeholder="&lt;xml/&gt;" />
+            <marker date="1497047547000" expanded="true" signature="3523:3525" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/todos/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7928389">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="383:987" placeholder="{&quot;name&quot;: 'todos.insert'...}" />
+            <marker date="1497047547000" expanded="true" signature="438:542" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="512:538" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="591:984" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="691:825" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="844:954" placeholder="{&quot;checked&quot;: false...}" />
+            <marker date="1497047547000" expanded="true" signature="1043:1691" placeholder="{&quot;name&quot;: 'todos.makeChecked'...}" />
+            <marker date="1497047547000" expanded="true" signature="1103:1179" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1230:1688" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1316:1410" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1451:1605" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1632:1682" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1640:1680" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1741:2311" placeholder="{&quot;name&quot;: 'todos.updateText'...}" />
+            <marker date="1497047547000" expanded="true" signature="1800:1866" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1908:2308" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1914:2017" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="2098:2237" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2264:2302" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2366:2962" placeholder="{&quot;name&quot;: 'todos.updatePriority'...}" />
+            <marker date="1497047547000" expanded="true" signature="2429:2499" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2545:2959" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2551:2654" placeholder="//..." />
+            <marker date="1497047547000" expanded="true" signature="2735:2880" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2907:2953" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3008:3384" placeholder="{&quot;name&quot;: 'todos.remove'...}" />
+            <marker date="1497047547000" expanded="true" signature="3063:3098" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3131:3381" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3213:3350" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3459:3516" placeholder="[...]" />
+            <marker date="1497047547000" expanded="true" signature="3549:3799" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3637:3786" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="3654:3707" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/TodoItem.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7425969">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="72:1702" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="201:249" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="375:461" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="478:676" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="788:939" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="813:890" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="953:1248" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1088:1132" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1146:1190" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1201:1244" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1318:1342" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1364:1388" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1472:1547" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1579:1654" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1698:1700" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/ListHeader.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4579832">
+          <caret line="78" column="35" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+          <folding>
+            <marker date="1497047547000" expanded="true" signature="62:2434" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="242:962" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="353:397" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="497:662" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="680:958" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="979:1703" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1049:1197" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1222:1637" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1370:1399" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1415:1446" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1459:1507" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1523:1571" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1584:1631" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1655:1698" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1726:1923" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1776:1919" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="1944:2070" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2087:2214" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2123:2210" placeholder="{...}" />
+            <marker date="1497047547000" expanded="true" signature="2293:2432" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/ListHeader.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2217822">
+          <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
