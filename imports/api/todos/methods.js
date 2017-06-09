@@ -12,8 +12,11 @@ export const insert = new ValidatedMethod({
   validate: new SimpleSchema({
     listId: { type: String },
     text: { type: String },
+    priority: {
+      type: String
+    }
   }).validator(),
-  run({ listId, text }) {
+  run({ listId, text, priority }) {
     const list = Lists.findOne(listId);
 
     if (list.isPrivate() && list.userId !== this.userId) {
@@ -24,6 +27,7 @@ export const insert = new ValidatedMethod({
     const todo = {
       listId,
       text,
+      priority: priority,
       checked: false,
       createdAt: new Date(),
     };
@@ -75,6 +79,29 @@ export const updateText = new ValidatedMethod({
 
     Todos.update(todoId, {
       $set: { text: newText },
+    });
+  },
+});
+
+
+export const updatePriority = new ValidatedMethod({
+  name: 'todos.updatePriority',
+  validate: new SimpleSchema({
+    todoId: { type: String },
+    newPriority: { type: String },
+  }).validator(),
+  run({ todoId, newPriority }) {
+    // This is complex auth stuff - perhaps denormalizing a userId onto todos
+    // would be correct here?
+    const todo = Todos.findOne(todoId);
+
+    if (!todo.editableBy(this.userId)) {
+      throw new Meteor.Error('api.todos.updatePriority.accessDenied',
+          'Cannot edit todos in a private list that is not yours');
+    }
+
+    Todos.update(todoId, {
+      $set: { priority: newPriority },
     });
   },
 });

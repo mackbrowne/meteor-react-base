@@ -46,6 +46,11 @@ Todos.schema = new SimpleSchema({
     type: String,
     max: 100,
   },
+  priority: {
+    type: String,
+    max: 6,
+    defaultValue: 'low'
+  },
   createdAt: {
     type: Date,
     denyUpdate: true,
@@ -64,6 +69,7 @@ Todos.attachSchema(Todos.schema);
 Todos.publicFields = {
   listId: 1,
   text: 1,
+  priority: 1,
   createdAt: 1,
   checked: 1,
 };
@@ -74,6 +80,7 @@ Todos.publicFields = {
 Factory.define('todo', Todos, {
   listId: () => Factory.get('list'),
   text: () => faker.lorem.sentence(),
+  priority: () => faker.lorem.sentence(),
   createdAt: () => new Date(),
 });
 

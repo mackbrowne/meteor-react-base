@@ -49,7 +49,43 @@
     .delete-item { display: inline-block; }
   }
 
+  .priority {
+    margin: 4px;
+    padding: 4px;
+    background-color: @color-secondary;
+    line-height: 2.1em;
+    border-radius: 14%;
+    &.low {
+      background-color: @color-cool;
+    }
+    &.medium {
+      background-color: @color-warm;
+    }
+    &.hot {
+      background-color: @color-hot;
+    }
+  }
+
   // Editing
   .delete-item { display: none; }
+  .list-item-actions {
+    display: none;
+  }
+  .list-action-label {
+    display: none;
+  }
   &.editing .delete-item { display: inline-block; }
+  &.editing .list-item-actions {
+    display: inline-block;
+    line-height: 2.7em;
+    margin: 0 4px;
+  }
+  &.editing .list-action-label {
+    display: inline-block;
+    line-height: 2.7em;
+    margin: 0 4px;
+  }
+  &.editing .priority {
+    display: none
+  }
 }
