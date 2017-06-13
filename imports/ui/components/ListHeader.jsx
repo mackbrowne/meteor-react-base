@@ -20,7 +20,7 @@ import {
 export default class ListHeader extends BaseComponent {
   constructor(props) {
     super(props);
-    this.state = Object.assign(this.state, { editing: false });
+    this.state = Object.assign(this.state, { editing: false, open: false, colorPicked: "white|black" });
     this.onListFormSubmit = this.onListFormSubmit.bind(this);
     this.onListInputKeyUp = this.onListInputKeyUp.bind(this);
     this.onListInputBlur = this.onListInputBlur.bind(this);
@@ -32,6 +32,8 @@ export default class ListHeader extends BaseComponent {
     this.toggleListPrivacy = this.toggleListPrivacy.bind(this);
     this.createTodo = this.createTodo.bind(this);
     this.focusTodoInput = this.focusTodoInput.bind(this);
+    this.toggle = this.toggle.bind(this);
+    this.selectColor = this.selectColor.bind(this);
   }
 
   onListFormSubmit(event) {
@@ -104,8 +106,10 @@ export default class ListHeader extends BaseComponent {
       insert.call({
         listId: this.props.list._id,
         text: input.value,
+        labelColor: this.state.colorPicked,
       }, displayError);
       input.value = '';
+      this.setState({colorPicked: "white|black"});
     }
   }
 
@@ -198,8 +202,25 @@ export default class ListHeader extends BaseComponent {
     );
   }
 
+  toggle(e) {
+    e.stopPropagation();
+    this.setState({
+      open: !this.state.open,
+    });
+  }
+
+  selectColor(e, color) {
+    e.stopPropagation();
+    this.setState({
+      open: !this.state.open,
+      colorPicked: color,
+    });
+  }
+
   render() {
     const { editing } = this.state;
+    const bgColor = this.state.colorPicked.split("|")[0];
+    const fontColor = this.state.colorPicked.split("|")[1];
     return (
       <nav className="list-header">
         {editing ? this.renderEditingHeader() : this.renderDefaultHeader()}
@@ -210,6 +231,19 @@ export default class ListHeader extends BaseComponent {
             placeholder={i18n.__('components.listHeader.typeToAdd')}
           />
           <span className="icon-add" onClick={this.focusTodoInput} />
+          <div className="nav-group right">
+            <div className={this.state.open ? "dropdown color-display show" : "dropdown color-display"}>
+              <a className="btn btn-secondary color-square" onClick={this.toggle} style={{background: bgColor, color: fontColor}}>
+                A
+              </a>
+              <div className="dropdown-menu color-menu">
+                <a className="dropdown-item  btn color-square" style={{background: "white", color:"black"}} onClick={(e) => {this.selectColor(e, "white|black")}}>A</a>
+                <a className="dropdown-item  btn color-square" style={{background: "red", color:"white"}} onClick={(e) => {this.selectColor(e, "red|white")}}>A</a>
+                <a className="dropdown-item  btn color-square" style={{background: "yellow", color:"black"}} onClick={(e) => {this.selectColor(e, "yellow|black")}}>A</a>
+                <a className="dropdown-item  btn color-square" style={{background: "blue", color:"white"}} onClick={(e) => {this.selectColor(e, "blue|white")}}>A</a>
+              </div>
+            </div>
+          </div>
         </form>
       </nav>
     );

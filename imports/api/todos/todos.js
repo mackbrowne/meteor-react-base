@@ -54,6 +54,11 @@ Todos.schema = new SimpleSchema({
     type: Boolean,
     defaultValue: false,
   },
+  labelColor: {
+    type: String,
+    defaultValue: 'white|black',
+    max: 50,
+  }
 });
 
 Todos.attachSchema(Todos.schema);
@@ -66,6 +71,7 @@ Todos.publicFields = {
   text: 1,
   createdAt: 1,
   checked: 1,
+  labelColor: 1,
 };
 
 // TODO This factory has a name - do we have a code style for this?
