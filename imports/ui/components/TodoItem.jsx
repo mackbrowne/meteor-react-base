@@ -61,8 +61,12 @@ export default class TodoItem extends BaseComponent {
       editing,
     });
 
+    // change the bg and text color of based on each task item
+    const bgColor = (todo.labelColor) ? todo.labelColor.split("|")[0] : 'white';
+    const textColor = (todo.labelColor) ? todo.labelColor.split("|")[1] : 'black';
+
     return (
-      <div className={todoClass}>
+      <div className={todoClass} style={{background: bgColor}}>
         <label className="checkbox" htmlFor={this.props.todo._id}>
           <input
             id={this.props.todo._id}
@@ -74,13 +78,13 @@ export default class TodoItem extends BaseComponent {
           <span className="checkbox-custom" />
         </label>
         <input
-
           type="text"
           defaultValue={todo.text}
           placeholder={i18n.__('components.todoItem.taskName')}
           onFocus={this.onFocus}
           onBlur={this.onBlur}
           onChange={this.updateTodo}
+          style={{color: textColor}}
         />
         <a
           className="delete-item"
