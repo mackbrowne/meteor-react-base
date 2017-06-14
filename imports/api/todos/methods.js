@@ -57,6 +57,25 @@ export const setCheckedStatus = new ValidatedMethod({
   },
 });
 
+export const setLabel = new ValidatedMethod({
+  name: 'todos.setLabel',
+  validate: new SimpleSchema({
+    todoId: {type: String},
+    newLabel: { type: String },
+  }).validator(),
+  run({ todoId, newLabel }) {
+    const todo = Todos.findOne(todoId);
+
+    //set permission for owner of list.
+    if(!todo.editableBy(this.userId)){
+      throw new Meteor.Error('api.todos.setLabel.accessDenied',
+        'Cannot edit label color in a private list that does not belong to you');
+    }
+
+    Todos.update(todoId, { $set: { label: newLabel } } );
+  },
+})
+
 export const updateText = new ValidatedMethod({
   name: 'todos.updateText',
   validate: new SimpleSchema({

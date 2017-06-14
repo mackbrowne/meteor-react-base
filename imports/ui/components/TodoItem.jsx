@@ -3,10 +3,12 @@ import { _ } from 'meteor/underscore';
 import classnames from 'classnames';
 import i18n from 'meteor/universe:i18n';
 import BaseComponent from './BaseComponent.jsx';
+import LabelPicker from './LabelPicker.jsx';
 import { displayError } from '../helpers/errors.js';
 
 import {
   setCheckedStatus,
+  setLabel,
   updateText,
   remove,
 } from '../../api/todos/methods.js';
@@ -82,6 +84,7 @@ export default class TodoItem extends BaseComponent {
           onBlur={this.onBlur}
           onChange={this.updateTodo}
         />
+        <LabelPicker current={todo.label}/>
         <a
           className="delete-item"
           href="#delete"
