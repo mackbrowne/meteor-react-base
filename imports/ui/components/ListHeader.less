@@ -42,14 +42,43 @@
     }
   }
   form.todo-new {
-    .position(absolute, 3em, 0, auto, 0);
+    .position(absolute, 2.1em, 0, auto, 0);
 
     input[type="text"] {
       background: transparent;
       padding-bottom: .25em;
       padding-left: 44px !important;
       padding-top: .25em;
+      width: 50%;
     }
+
+    .list-item-actions {
+      margin: 0 4px;
+      padding: 4px;
+      background-color: @color-secondary;
+      line-height: 3em;
+      border-radius: 14%;
+      &.show {
+        opacity: 1;
+      }
+      &.hidden {
+        opacity: 0.5;
+      }
+      &.low {
+        background-color: @color-cool;
+      }
+      &.medium {
+        background-color: @color-warm;
+      }
+      &.hot {
+        background-color: @color-hot;
+      }
+    }
+
+    .icon-check {
+      position: initial !important;
+    }
+
   }
   form.list-edit-form {
     position: relative;

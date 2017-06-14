@@ -97,15 +97,23 @@ export default class ListHeader extends BaseComponent {
     }
   }
 
+  setPriority(priority) {
+    this.newPriorityInput = priority;
+    this.forceUpdate();
+  }
+
   createTodo(event) {
     event.preventDefault();
     const input = this.newTodoInput;
+    //const priority = this.newPriorityInput;
     if (input.value.trim()) {
       insert.call({
         listId: this.props.list._id,
         text: input.value,
+        priority: this.newPriorityInput
       }, displayError);
       input.value = '';
+      this.newPriorityInput = '';
     }
   }
 
@@ -209,6 +217,26 @@ export default class ListHeader extends BaseComponent {
             ref={(c) => { this.newTodoInput = c; }}
             placeholder={i18n.__('components.listHeader.typeToAdd')}
           />
+          <span className="list-action-label">
+          Set Priority:
+        </span>
+
+          <a className={"list-item-actions low " + (this.newPriorityInput === 'low' ? 'show': 'hidden')}
+             onClick={() => this.setPriority('low')}
+             onMouseDown={() => this.setPriority('low')}>
+            Low
+          </a>
+          <a className={"list-item-actions medium " + (this.newPriorityInput === 'medium' ? 'show': 'hidden')}
+             onClick={() => this.setPriority('medium')}
+             onMouseDown={() => this.setPriority('medium')}>
+            Medium
+          </a>
+          <a className={"list-item-actions high " + (this.newPriorityInput === 'high' ? 'show': 'hidden')}
+             onClick={() => this.setPriority('high')}
+             onMouseDown={() => this.setPriority('high')}>
+            High
+          </a>
+
           <span className="icon-add" onClick={this.focusTodoInput} />
         </form>
       </nav>

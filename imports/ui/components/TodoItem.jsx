@@ -8,6 +8,7 @@ import { displayError } from '../helpers/errors.js';
 import {
   setCheckedStatus,
   updateText,
+  updatePriority,
   remove,
 } from '../../api/todos/methods.js';
 
@@ -18,7 +19,7 @@ export default class TodoItem extends BaseComponent {
       if (value) {
         updateText.call({
           todoId: this.props.todo._id,
-          newText: value,
+          newText: value.name,
         }, displayError);
       }
     }, 300);
@@ -47,6 +48,13 @@ export default class TodoItem extends BaseComponent {
 
   updateTodo(event) {
     this.throttledUpdate(event.target.value);
+  }
+
+  setPriority(id, priority) {
+      updatePriority.call({
+          todoId: id,
+          newPriority: priority,
+      }, displayError);
   }
 
   deleteTodo() {
@@ -82,6 +90,27 @@ export default class TodoItem extends BaseComponent {
           onBlur={this.onBlur}
           onChange={this.updateTodo}
         />
+        <span className={"priority " + todo.priority}>{todo.priority}</span>
+
+        <span className="list-action-label">
+          Set Priority:
+        </span>
+
+        <a className="list-item-actions"
+           onClick={() => this.setPriority(this.props.todo._id, 'low')}
+           onMouseDown={() => this.setPriority(this.props.todo._id, 'low')}>
+          Low
+        </a>
+        <a className="list-item-actions"
+           onClick={() => this.setPriority(this.props.todo._id, 'medium')}
+           onMouseDown={() => this.setPriority(this.props.todo._id, 'medium')}>
+          Medium
+        </a>
+        <a className="list-item-actions"
+           onClick={() => this.setPriority(this.props.todo._id, 'high')}
+           onMouseDown={() => this.setPriority(this.props.todo._id, 'high')}>
+          High
+        </a>
         <a
           className="delete-item"
           href="#delete"
