@@ -54,7 +54,7 @@ export default class TodoItem extends BaseComponent {
   }
 
   render() {
-    const { todo, editing } = this.props;
+    const { todo, editing, onMoveItem } = this.props;
     const todoClass = classnames({
       'list-item': true,
       checked: todo.checked,
@@ -90,6 +90,20 @@ export default class TodoItem extends BaseComponent {
         >
           <span className="icon-trash" />
         </a>
+        <a
+          className="move-item up"
+          href="#move-up"
+          onClick={e => onMoveItem(e, todo, 'up')}
+        >
+          <span className="icon-arrow-up" title="Move Up" />
+        </a>
+        <a
+          className="move-item down"
+          href="#move-down"
+          onClick={e => onMoveItem(e, todo, 'down')}
+        >
+          <span className="icon-arrow-down" title="Move Down" />
+        </a>
       </div>
     );
   }
@@ -99,4 +113,5 @@ TodoItem.propTypes = {
   todo: React.PropTypes.object,
   editing: React.PropTypes.bool,
   onEditingChange: React.PropTypes.func,
+  onMoveItem: React.PropTypes.func,
 };
