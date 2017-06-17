@@ -1,6 +1,11 @@
 @import '{}/imports/ui/stylesheets/utils.less';
 
 .list-items .list-item {
+
+  .icon-arrow-up, .icon-arrow-down {
+    font-size: 1.1em;
+  }
+
   .font-s2;
 
   // Layout of list-item children
@@ -23,6 +28,19 @@
     cursor: pointer;
 
     &:focus { cursor: text; }
+  }
+
+  .move-item {
+    color:@color-medium-rare;
+    line-height: 3rem;
+    text-align: center;
+    padding: 0 10px;
+
+    &:hover { color: @color-primary; text-decoration: none; }
+    &:active { color: @color-well; }
+    .icon-arrow-down, .icon-arrow-up {
+      font-size: 1.1em
+    }
   }
 
   .delete-item {
