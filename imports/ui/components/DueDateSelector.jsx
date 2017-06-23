@@ -4,7 +4,6 @@ import i18n from 'meteor/universe:i18n';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 
-
 // Components
 import DateSelectorButton from './DateSelectorButton.jsx';
 import BaseComponent from './BaseComponent.jsx';
