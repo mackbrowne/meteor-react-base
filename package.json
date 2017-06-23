@@ -24,7 +24,7 @@
     "react-addons-pure-render-mixin": "^15.3.1",
     "react-addons-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
-    "react-router": "^2.8.1",
+    "react-router-dom": "^4.1.1",
     "reactstrap": "^4.5.0"
   },
   "devDependencies": {

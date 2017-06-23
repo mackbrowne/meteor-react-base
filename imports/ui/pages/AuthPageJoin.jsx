@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import { Accounts } from 'meteor/accounts-base';
 import i18n from 'meteor/universe:i18n';
 import BaseComponent from '../components/BaseComponent.jsx';
@@ -44,7 +44,7 @@ export default class JoinPage extends BaseComponent {
           errors: { none: err.reason },
         });
       }
-      this.context.router.push('/');
+      this.context.router.transitionTo('/');
     });
   }
 
@@ -111,9 +111,9 @@ export default class JoinPage extends BaseComponent {
     );
 
     const link = (
-      <Link to="/signin" className="link-auth-alt">
+      <NavLink to="/signin" className="link-auth-alt">
         {i18n.__('pages.authPageJoin.haveAccountSignIn')}
-      </Link>
+      </NavLink>
     );
 
     return <AuthPage content={content} link={link} />;

@@ -52,7 +52,7 @@ if (Meteor.isClient) {
         header.find('.trash').simulate('click');
 
         sinon.assert.calledWith(remove.call, { listId: list._id });
-        sinon.assert.calledWith(router.push, '/');
+        sinon.assert.calledWith(router.transitionTo, '/');
 
         remove.call.restore();
         window.confirm.restore();

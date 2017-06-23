@@ -9,6 +9,13 @@ import LanguageToggle from '../components/LanguageToggle.jsx';
 import ConnectionNotification from '../components/ConnectionNotification.jsx';
 import Loading from '../components/Loading.jsx';
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ListPageContainer from '../../ui/containers/ListPageContainer.jsx';
+import AuthPageSignIn from '../../ui/pages/AuthPageSignIn.jsx';
+import AuthPageJoin from '../../ui/pages/AuthPageJoin.jsx';
+import NotFoundPage from '../../ui/pages/NotFoundPage.jsx';
+
+
 const CONNECTION_ISSUE_TIMEOUT = 5000;
 
 export default class App extends React.Component {
@@ -33,7 +40,8 @@ export default class App extends React.Component {
     // redirect / to a list once lists are ready
     if (!loading && !children) {
       const list = Lists.findOne();
-      this.context.router.replace(`/lists/${list._id}`);
+
+      this.context.router.history.replace(`/lists/${list._id}`);
     }
   }
 
@@ -49,7 +57,7 @@ export default class App extends React.Component {
       const list = Lists.findOne(this.props.params.id);
       if (list.userId) {
         const publicList = Lists.findOne({ userId: { $exists: false } });
-        this.context.router.push(`/lists/${publicList._id}`);
+        this.context.router.history.push(`/lists/${publicList._id}`);
       }
     }
   }
@@ -69,13 +77,19 @@ export default class App extends React.Component {
     // eslint-disable-next-line react/jsx-no-bind
     const closeMenu = this.toggleMenu.bind(this, false);
 
+    //todo: I comment out this key passing and not sure this key is important or not,
+    // if it is important, we can pass it into each component directly through props
+    // --sean June 22, 2017
+
     // clone route components with keys so that they can
     // have transitions
-    const clonedChildren = children && React.cloneElement(children, {
-      key: location.pathname,
-    });
+    // const clonedChildren = children && React.cloneElement(children, {
+    //   key: location.pathname,
+    // });
+
 
     return (
+      <Router>
       <div id="container" className={menuOpen ? 'menu-open' : ''}>
         <section id="menu">
           <LanguageToggle />
@@ -94,10 +108,18 @@ export default class App extends React.Component {
           >
             {loading
               ? <Loading key="loading" />
-              : clonedChildren}
+              :
+              <Switch>
+                <Route path="/lists/:id" component={ListPageContainer} />
+                <Route path="/signin" component={AuthPageSignIn} />
+                <Route path="/join" component={AuthPageJoin} />
+                <Route component={NotFoundPage} />
+              </Switch>
+            }
           </ReactCSSTransitionGroup>
         </div>
       </div>
+      </Router>
     );
   }
 }
