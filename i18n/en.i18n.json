@@ -32,7 +32,9 @@
       "showMenu": "Show Menu"
     },
     "todoItem": {
-      "taskName": "Task name"
+      "taskName": "Task name",
+      "dateFormat": "DD.MM.YYYY",
+      "dueDate": "Set Due Date"
     }
   },
   "pages": {

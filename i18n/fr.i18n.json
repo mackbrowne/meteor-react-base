@@ -32,7 +32,9 @@
       "showMenu": "Afficher le menu"
     },
     "todoItem": {
-      "taskName": "Nom de la tâche"
+      "taskName": "Nom de la tâche",
+      "dateFormat": "YYYY/MM/DD",
+      "dueDate": "Date d'échéance"
     }
   },
   "pages": {
