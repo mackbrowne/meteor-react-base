@@ -61,7 +61,7 @@ export const setDueDate = new ValidatedMethod({
   name: 'todos.setDueDate',
   validate: new SimpleSchema({
     todoId: { type: String },
-    newDueDate: { type: Date },
+    newDueDate: { type: Date, optional: true },
   }).validator(),
   run({ todoId, newDueDate }) {
     const todo = Todos.findOne(todoId);
@@ -70,14 +70,21 @@ export const setDueDate = new ValidatedMethod({
       return;
     }
 
+    if (newDueDate === undefined) {
+      Todos.update(todoId, {
+        $unset: { dueDate: 1 },
+      });
+      return;
+    }
+
     if (!todo.editableBy(this.userId)) {
       throw new Meteor.Error('api.todos.setDueDate.accessDenied',
         'Cannot edit due date in a private list that is not yours');
     }
 
-    Todos.update(todoId, { $set: {
-      dueDate: newDueDate,
-    } });
+    Todos.update(todoId, {
+      $set: { dueDate: newDueDate },
+    });
   },
 });
 

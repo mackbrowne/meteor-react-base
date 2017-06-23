@@ -34,7 +34,8 @@
     "todoItem": {
       "taskName": "Task name",
       "dateFormat": "DD.MM.YYYY",
-      "dueDate": "Set Due Date"
+      "dueDate": "Set Due Date",
+      "clearDueDate": "Clear Due Date"
     }
   },
   "pages": {

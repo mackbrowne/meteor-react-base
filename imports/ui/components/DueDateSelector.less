@@ -1,32 +1,62 @@
 @import '{}/imports/ui/stylesheets/utils.less';
 
 .due-date-selector {
-  padding: 0.8rem;
-  height: 3rem;
-  background: none;
-  color: rgb(204, 204, 204);
 
-  &.overdue {
-    color: rgb(255, 150, 150);
-  }
+  display: flex;
 
-  &.today {
+  .clear-due-date {
     color: rgb(150, 150, 150);
-    font-weight: 700;
-  }
-
-  .calender-icon {
+    display: none;
+    order: 1;
+    background: none;
+    font-size: 0.8rem;
+    height: 100%;
     width: 1.1rem;
-    height: 1.1rem;
-    path {
-      transition: fill 200ms ease-in;
-      fill: rgb(204, 204, 204);
-    }
   }
 
-  &:hover {
-    .calender-icon {
-      path { fill: rgb(93, 185, 255); }
+  .react-datepicker__input-container {
+    order: 2;
+  }
+
+  .react-datepicker__input-container:hover + .clear-due-date.enabled ,
+  .clear-due-date.enabled:hover {
+    display: inline-block;
+  }
+
+  .date-selector-button {
+    padding: 0.8rem;
+    height: 3rem;
+    background: none;
+    color: rgb(204, 204, 204);
+
+    &.overdue {
+      color: rgb(255, 150, 150);
     }
+
+    &.today {
+      color: rgb(150, 150, 150);
+      font-weight: 700;
+    }
+    
+    &.date-set {
+      padding-left: 0.2rem;
+    }
+
+    .calender-icon {
+      width: 1.1rem;
+      height: 1.1rem;
+      path {
+        transition: fill 200ms ease-in;
+        fill: rgb(204, 204, 204);
+      }
+    }
+
+    &:hover {
+      .calender-icon {
+        path { fill: rgb(93, 185, 255); }
+      }
+    }
+
   }
 }
+

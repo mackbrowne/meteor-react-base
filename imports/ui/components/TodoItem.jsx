@@ -27,6 +27,7 @@ export default class TodoItem extends BaseComponent {
 
     this.setTodoCheckStatus = this.setTodoCheckStatus.bind(this);
     this.setDueDateState = this.setDueDateState.bind(this);
+    this.clearDueDateState = this.clearDueDateState.bind(this);
     this.updateTodo = this.updateTodo.bind(this);
     this.deleteTodo = this.deleteTodo.bind(this);
     this.onFocus = this.onFocus.bind(this);
@@ -63,6 +64,13 @@ export default class TodoItem extends BaseComponent {
     });
   }
 
+  clearDueDateState() {
+    setDueDate.call({
+      todoId: this.props.todo._id,
+      newDueDate: undefined,
+    });
+  }
+
   render() {
     const { todo, editing } = this.props;
     const todoClass = classnames({
@@ -84,7 +92,6 @@ export default class TodoItem extends BaseComponent {
           <span className="checkbox-custom" />
         </label>
         <input
-
           type="text"
           defaultValue={todo.text}
           placeholder={i18n.__('components.todoItem.taskName')}
@@ -96,6 +103,7 @@ export default class TodoItem extends BaseComponent {
           className="due-date"
           dueDate={todo.dueDate}
           onChange={this.setDueDateState}
+          onReset={this.clearDueDateState}
         />
         <a
           className="delete-item"

@@ -56,6 +56,7 @@ Todos.schema = new SimpleSchema({
   },
   dueDate: {
     type: Date('<YYYY-mm-dd>'),
+    defaultValue: undefined,
     optional: true,
   },
 });
