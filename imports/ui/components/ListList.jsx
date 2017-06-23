@@ -1,7 +1,7 @@
 /* global alert */
 
 import React from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import i18n from 'meteor/universe:i18n';
 import BaseComponent from './BaseComponent.jsx';
 import { insert } from '../../api/lists/methods.js';
@@ -16,12 +16,12 @@ export default class ListList extends BaseComponent {
     const { router } = this.context;
     const listId = insert.call({ locale: i18n.getLocale() }, (err) => {
       if (err) {
-        router.push('/');
+        router.transitionTo('/');
         /* eslint-disable no-alert */
         alert(i18n.__('components.listList.newListError'));
       }
     });
-    router.push(`/lists/${listId}`);
+    router.transitionTo(`/lists/${listId}`);
   }
 
   render() {
@@ -33,7 +33,7 @@ export default class ListList extends BaseComponent {
           {i18n.__('components.listList.newList')}
         </a>
         {lists.map(list => (
-          <Link
+          <NavLink
             to={`/lists/${list._id}`}
             key={list._id}
             title={list.name}
@@ -47,7 +47,7 @@ export default class ListList extends BaseComponent {
               ? <span className="count-list">{list.incompleteCount}</span>
               : null}
             {list.name}
-          </Link>
+          </NavLink>
         ))}
       </div>
     );

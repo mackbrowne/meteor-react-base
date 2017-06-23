@@ -84,7 +84,7 @@ export default class ListHeader extends BaseComponent {
 
     if (confirm(message)) { // eslint-disable-line no-alert
       remove.call({ listId: list._id }, displayError);
-      this.context.router.push('/');
+      this.context.router.transitionTo('/');
     }
   }
 

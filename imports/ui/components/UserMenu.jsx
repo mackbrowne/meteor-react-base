@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import i18n from 'meteor/universe:i18n';
 import BaseComponent from './BaseComponent.jsx';
 
@@ -43,12 +43,12 @@ export default class UserMenu extends BaseComponent {
   renderLoggedOut() {
     return (
       <div className="user-menu">
-        <Link to="/signin" className="btn-secondary">
+        <NavLink to="/signin" className="btn-secondary">
           {i18n.__('components.userMenu.login')}
-        </Link>
-        <Link to="/join" className="btn-secondary">
+        </NavLink>
+        <NavLink to="/join" className="btn-secondary">
           {i18n.__('components.userMenu.join')}
-        </Link>
+        </NavLink>
       </div>
     );
   }

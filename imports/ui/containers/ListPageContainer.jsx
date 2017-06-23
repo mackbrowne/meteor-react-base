@@ -3,7 +3,8 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Lists } from '../../api/lists/lists.js';
 import ListPage from '../pages/ListPage.jsx';
 
-const ListPageContainer = createContainer(({ params: { id } }) => {
+const ListPageContainer = createContainer(({ match }) => {
+  const id = match.params.id;
   const todosHandle = Meteor.subscribe('todos.inList', { listId: id });
   const loading = !todosHandle.ready();
   const list = Lists.findOne(id);
