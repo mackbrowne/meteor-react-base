@@ -20,7 +20,7 @@ import {
 export default class ListHeader extends BaseComponent {
   constructor(props) {
     super(props);
-    this.state = Object.assign(this.state, { editing: false }, {pomoEstimate: 0});
+    this.state = Object.assign(this.state, { editing: false }, {pomosEstimated: 0});
     this.onListFormSubmit = this.onListFormSubmit.bind(this);
     this.onListInputKeyUp = this.onListInputKeyUp.bind(this);
     this.onListInputBlur = this.onListInputBlur.bind(this);
@@ -99,7 +99,7 @@ export default class ListHeader extends BaseComponent {
   }
 
   pomoOnChange(event) {
-    this.setState({pomoEstimate: event.target.value})
+    this.setState({pomosEstimated: event.target.value})
   }
 
   createTodo(event) {
@@ -109,7 +109,7 @@ export default class ListHeader extends BaseComponent {
       insert.call({
         listId: this.props.list._id,
         text: input.value,
-        pomoEstimate: Number(this.state.pomoEstimate),
+        pomosEstimated: Number(this.state.pomosEstimated),
       }, displayError);
       input.value = '';
     }
@@ -219,8 +219,8 @@ export default class ListHeader extends BaseComponent {
             <span className="icon-add" onClick={this.focusTodoInput} />
           </div>
           <div className="pomo-estimate-dropdown input-symbol">
-            <label className="sr-only" htmlFor="sel1">Pomo Estimate:</label>
-            <select value={this.state.pomoEstimate} onChange={this.pomoOnChange} className="form-control" id="sel1">
+            <label className="sr-only" htmlFor="sel1">Pomos Estimated:</label>
+            <select value={this.state.pomosEstimated} onChange={this.pomoOnChange} className="form-control" id="sel1">
               <option value="0" >0 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
               <option value="1" >1 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
               <option value="2" >2 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>

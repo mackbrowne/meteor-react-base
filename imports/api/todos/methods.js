@@ -12,8 +12,9 @@ export const insert = new ValidatedMethod({
   validate: new SimpleSchema({
     listId: { type: String },
     text: { type: String },
+    pomosEstimated: { type: Number },
   }).validator(),
-  run({ listId, text }) {
+  run({ listId, text, pomosEstimated }) {
     const list = Lists.findOne(listId);
 
     if (list.isPrivate() && list.userId !== this.userId) {
@@ -26,6 +27,8 @@ export const insert = new ValidatedMethod({
       text,
       checked: false,
       createdAt: new Date(),
+      pomosEstimated,
+      pomosCompleted: 0,
     };
 
     Todos.insert(todo);
