@@ -5,16 +5,27 @@
 
   // Layout of list-item children
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
   height: 3rem;
-  width: 100%;
+  align-items: center;
 
   .checkbox {
-    flex: 0, 0, 44px;
+    height: 1rem;
     cursor: pointer;
   }
+
+  .pomo-input {
+    width: 40px;
+    height: 1rem;
+    border: none;
+    padding-left: 10px;
+    text-align: center;
+    color: @color-well;
+  }
+
   input[type="text"] { flex: 1; }
-  .delete-item { flex: 0 0 3rem; }
+  .delete-item { flex: 0 0 1rem; }
 
 
   // Style of list-item children
@@ -27,8 +38,9 @@
 
   .delete-item {
     color: @color-medium-rare;
-    line-height: 3rem;
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
 
     &:hover { color: @color-primary; }
     &:active { color: @color-well; }
@@ -45,11 +57,23 @@
       color: @color-medium-rare;
       text-decoration: line-through;
     }
+    .pomo-input{
+      color: @color-medium-rare;
+    }
+    .pomo-spacer{
+      color: @color-medium-rare;
+    }
 
-    .delete-item { display: inline-block; }
+    .delete-item {
+       display: flex;
+       padding-right: 15px;
+    }
   }
 
   // Editing
   .delete-item { display: none; }
-  &.editing .delete-item { display: inline-block; }
+  &.editing .delete-item {
+     display: flex;
+     padding-right: 15px;
+  }
 }

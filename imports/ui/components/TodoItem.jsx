@@ -75,6 +75,29 @@ export default class TodoItem extends BaseComponent {
         </label>
         <input
 
+          className="pomo-input"
+          type="number"
+          name="pomosCompleted"
+          placeholder={todo.pomosCompleted ? todo.pomosCompleted : '0'}
+          onFocus={this.onFocus}
+          onBlur={this.onBlur}
+          onChange={this.updatePomosCompleted}
+          min="0"
+        />
+        <div className="pomo-spacer">of</div>
+        <input
+
+          className="pomo-input"
+          type="number"
+          name="pomosEstimated"
+          placeholder={todo.pomosEstimated ? todo.pomosEstimated : '0'}
+          onFocus={this.onFocus}
+          onBlur={this.onBlur}
+          onChange={this.updatePomosEstimated}
+          min="0"
+        />
+        <input
+
           type="text"
           defaultValue={todo.text}
           placeholder={i18n.__('components.todoItem.taskName')}
