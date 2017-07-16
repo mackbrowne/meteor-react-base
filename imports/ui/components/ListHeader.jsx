@@ -20,7 +20,7 @@ import {
 export default class ListHeader extends BaseComponent {
   constructor(props) {
     super(props);
-    this.state = Object.assign(this.state, { editing: false });
+    this.state = Object.assign(this.state, { editing: false }, {pomoEstimate: 0});
     this.onListFormSubmit = this.onListFormSubmit.bind(this);
     this.onListInputKeyUp = this.onListInputKeyUp.bind(this);
     this.onListInputBlur = this.onListInputBlur.bind(this);
@@ -32,6 +32,7 @@ export default class ListHeader extends BaseComponent {
     this.toggleListPrivacy = this.toggleListPrivacy.bind(this);
     this.createTodo = this.createTodo.bind(this);
     this.focusTodoInput = this.focusTodoInput.bind(this);
+    this.pomoOnChange = this.pomoOnChange.bind(this);
   }
 
   onListFormSubmit(event) {
@@ -97,6 +98,10 @@ export default class ListHeader extends BaseComponent {
     }
   }
 
+  pomoOnChange(event) {
+    this.setState({pomoEstimate: event.target.value})
+  }
+
   createTodo(event) {
     event.preventDefault();
     const input = this.newTodoInput;
@@ -104,6 +109,7 @@ export default class ListHeader extends BaseComponent {
       insert.call({
         listId: this.props.list._id,
         text: input.value,
+        pomoEstimate: Number(this.state.pomoEstimate),
       }, displayError);
       input.value = '';
     }
@@ -203,13 +209,26 @@ export default class ListHeader extends BaseComponent {
     return (
       <nav className="list-header">
         {editing ? this.renderEditingHeader() : this.renderDefaultHeader()}
-        <form className="todo-new input-symbol" onSubmit={this.createTodo}>
-          <input
-            type="text"
-            ref={(c) => { this.newTodoInput = c; }}
-            placeholder={i18n.__('components.listHeader.typeToAdd')}
-          />
-          <span className="icon-add" onClick={this.focusTodoInput} />
+        <form onSubmit={this.createTodo}>
+          <div className="todo-new input-symbol">
+            <input
+              type="text"
+              ref={(c) => { this.newTodoInput = c; }}
+              placeholder={i18n.__('components.listHeader.typeToAdd')}
+            />
+            <span className="icon-add" onClick={this.focusTodoInput} />
+          </div>
+          <div className="pomo-estimate-dropdown input-symbol">
+            <label className="sr-only" htmlFor="sel1">Pomo Estimate:</label>
+            <select value={this.state.pomoEstimate} onChange={this.pomoOnChange} className="form-control" id="sel1">
+              <option value="0" >0 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
+              <option value="1" >1 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
+              <option value="2" >2 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
+              <option value="3" >3 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
+              <option value="4" >4 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
+            </select>
+          <span className="icon-arrow-down" />
+          </div>
         </form>
       </nav>
     );

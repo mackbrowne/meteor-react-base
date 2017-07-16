@@ -19,7 +19,8 @@
       "makeListPrivate": "Fermer la liste au public",
       "deleteList": "Effacer la liste",
       "cancel": "Annuler",
-      "typeToAdd": "Tapez pour ajouter de nouvelles tâches"
+      "typeToAdd": "Tapez pour ajouter de nouvelles tâches",
+      "selectEstimatedPomodoros": "Estimê Pomodoros"
     },
     "listList": {
       "newList": "Nouvelle liste",

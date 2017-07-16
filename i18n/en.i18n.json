@@ -19,7 +19,8 @@
       "makeListPrivate": "Make list private",
       "deleteList": "Delete list",
       "cancel": "Cancel",
-      "typeToAdd": "Type to add new tasks"
+      "typeToAdd": "Type to add new tasks",
+      "selectEstimatedPomodoros": "Estimated Pomodoros"
     },
     "listList": {
       "newList": "New List",
