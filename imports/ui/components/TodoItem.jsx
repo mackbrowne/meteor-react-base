@@ -30,6 +30,8 @@ export default class TodoItem extends BaseComponent {
     this.deleteTodo = this.deleteTodo.bind(this);
     this.onFocus = this.onFocus.bind(this);
     this.onBlur = this.onBlur.bind(this);
+    this.updatePomosCompleted = this.updatePomosCompleted.bind(this);
+    this.updatePomosEstimated = this.updatePomosEstimated.bind(this);
   }
 
   onFocus() {
@@ -44,6 +46,20 @@ export default class TodoItem extends BaseComponent {
     setCheckedStatus.call({
       todoId: this.props.todo._id,
       newCheckedStatus: event.target.checked,
+    });
+  }
+
+  updatePomosCompleted(event) {
+    updatePomosCompleted.call({
+      todoId: this.props.todo._id,
+      newNumber: Number(event.target.value),
+    });
+  }
+
+  updatePomosEstimated(event) {
+    updatePomosEstimated.call({
+      todoId: this.props.todo._id,
+      newNumber: Number(event.target.value),
     });
   }
 
@@ -80,11 +96,11 @@ export default class TodoItem extends BaseComponent {
           className="pomo-input"
           type="number"
           name="pomosCompleted"
+          defaultValue={todo.pomosCompleted ? todo.pomosCompleted : '0'}
           placeholder={todo.pomosCompleted ? todo.pomosCompleted : '0'}
-          onFocus={this.onFocus}
-          onBlur={this.onBlur}
-          onChange={this.updatePomosCompleted}
+          onBlur={this.updatePomosCompleted}
           min="0"
+          max="99"
         />
         <div className="pomo-spacer">of</div>
         <input
@@ -92,11 +108,11 @@ export default class TodoItem extends BaseComponent {
           className="pomo-input"
           type="number"
           name="pomosEstimated"
+          defaultValue={todo.pomosEstimated ? todo.pomosEstimated : '0'}
           placeholder={todo.pomosEstimated ? todo.pomosEstimated : '0'}
-          onFocus={this.onFocus}
-          onBlur={this.onBlur}
-          onChange={this.updatePomosEstimated}
+          onBlur={this.updatePomosEstimated}
           min="0"
+          max="99"
         />
         <input
 
