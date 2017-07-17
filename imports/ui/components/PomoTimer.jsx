@@ -4,11 +4,9 @@ export default class PomoTimer extends Component {
   constructor(props) {
     super(props);
 
-    // Set time remaining from local storage (in case of page-refresh).
-    // Otherwise default time is 25 minutes (calculated in milliseconds)
-    // let timeRemaining = localStorage.timeRemaining? localStorage.timeRemaining : 25 * 60 * 1000;
-    // let timeRemaining = 25 * 60 * 1000;
-    const timeRemaining = 2 * 1000;
+    // Get timer from local storage or set default timer
+    // let timeRemaining = localStorage.getItem('timeRemaining');
+    // timeRemaining = timeRemaining || 25 * 60 * 1000;
 
     this.state = {
       minutes: 25,
@@ -16,7 +14,7 @@ export default class PomoTimer extends Component {
       beepRunning: false,
       beeps: 0,
       timeRunning: false,
-      timeRemaining,
+      timeRemaining: 25 * 60 * 1000,
     };
 
     this.startTimer = this.startTimer.bind(this);
@@ -32,7 +30,6 @@ export default class PomoTimer extends Component {
     if (timeRemaining < 1 && !this.state.beepRunning) {
       this.setState({ beepRunning: true });
       this.intervalIDBeep = setInterval(this.beep.bind(this), 1000);
-      // this.intervalIDBeep = setInterval(this.beep.bind(this), 500);
     }
 
     const minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
@@ -44,7 +41,7 @@ export default class PomoTimer extends Component {
       seconds,
     });
 
-    // this.localStorage.timeRemaining = timeRemaining;
+    // localStorage.setItem('timeRemaining', timeRemaining);
   }
 
   beep() {
@@ -58,14 +55,25 @@ export default class PomoTimer extends Component {
   }
 
   startTimer() {
-    this.setState({ timeRunning: true });
+    // Set time remaining from local storage (in case of page-refresh).
+    // Otherwise default time is 25 minutes (calculated in milliseconds)
+    // const timeRemaining = 25 * 60 * 1000;
+    const timeRemaining = 11 * 1000;
+    this.setState({
+      timeRunning: true,
+      timeRemaining,
+    });
+    // Clear Break timer and start pomodoro timer
+    clearInterval(this.intervalIDTimer);
     this.intervalIDTimer = setInterval(this.countDownASecond.bind(this), 1000);
   }
 
   stopTimer() {
+    // Clear pomo timer
     clearInterval(this.intervalIDTimer);
     clearInterval(this.intervalIDBeep);
-    const timeRemaining = 25 * 60 * 1000;
+    const breakTime = 5 * 60 * 1000;
+    const timeRemaining = breakTime;
 
     this.setState({
       timeRunning: false,
@@ -73,7 +81,9 @@ export default class PomoTimer extends Component {
       beeps: 0,
       timeRemaining,
     });
-    // this.localStorage.timeRemaining = timeRemaining;
+
+    // Start break timer
+    this.intervalIDTimer = setInterval(this.countDownASecond.bind(this), 1000);
   }
 
   render() {
@@ -81,19 +91,16 @@ export default class PomoTimer extends Component {
       <div className="pomo-timer">
         <br />
         <br />
-        <div>
-          ToDo Item Selected:
-        </div>
-        <div>Time until break:</div>
+        <div>Time Remaining:</div>
         <div className="timer">
           <h2 className={(this.state.timeRemaining < 1) ? 'text-blink' : ''}>
-            {(this.state.minutes < 10) ? (`0${this.state.minutes}`) : this.state.minutes }
+            {(this.state.minutes < 10) ? (`0${this.state.minutes}`) : this.state.minutes}
             :
-            {(this.state.seconds < 10) ? (`0${this.state.seconds}`) : this.state.seconds }
+            {(this.state.seconds < 10) ? (`0${this.state.seconds}`) : this.state.seconds}
           </h2>
         </div>
         <div>
-          { !this.state.timeRunning ?
+          {!this.state.timeRunning ?
             <button
               type="button"
               className="btn btn-primary btn-md"
