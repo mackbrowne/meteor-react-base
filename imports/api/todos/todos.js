@@ -54,6 +54,14 @@ Todos.schema = new SimpleSchema({
     type: Boolean,
     defaultValue: false,
   },
+  pomosEstimated: {
+    type: Number,
+    defaultValue: 0,
+  },
+  pomosCompleted: {
+    type: Number,
+    defaultValue: 0,
+  },
 });
 
 Todos.attachSchema(Todos.schema);
@@ -66,6 +74,8 @@ Todos.publicFields = {
   text: 1,
   createdAt: 1,
   checked: 1,
+  pomosCompleted: 1,
+  pomosEstimated: 1,
 };
 
 // TODO This factory has a name - do we have a code style for this?

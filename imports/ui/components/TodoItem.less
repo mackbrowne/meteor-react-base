@@ -21,7 +21,25 @@
     border: none;
     padding-left: 10px;
     text-align: center;
-    color: @color-well;
+
+    // Change placeholder text color on pomo inputs
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color:    @color-well;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:    @color-well;
+      opacity:  1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:    @color-well;
+      opacity:  1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color:    @color-well;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color:    @color-well;
+    }
   }
 
   input[type="text"] { flex: 1; }
@@ -59,6 +77,24 @@
     }
     .pomo-input{
       color: @color-medium-rare;
+      // Change placeholder text color on pomo inputs
+      &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    @color-medium-rare;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    @color-medium-rare;
+        opacity:  1;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    @color-medium-rare;
+        opacity:  1;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:    @color-medium-rare;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color:    @color-medium-rare;
+      }
     }
     .pomo-spacer{
       color: @color-medium-rare;

@@ -82,6 +82,46 @@ export const updateText = new ValidatedMethod({
   },
 });
 
+export const updatePomosEstimated = new ValidatedMethod({
+  name: 'todos.updatePomosEstimated',
+  validate: new SimpleSchema({
+    todoId: { type: String },
+    newNumber: { type: Number },
+  }).validator(),
+  run({ todoId, newNumber }) {
+    const todo = Todos.findOne(todoId);
+
+    if (!todo.editableBy(this.userId)) {
+      throw new Meteor.Error('api.todos.updatePomosEstimated.accessDenied',
+        'Cannot edit todos in a private list that is not yours');
+    }
+
+    Todos.update(todoId, {
+      $set: { pomosEstimated: newNumber },
+    });
+  },
+});
+
+export const updatePomosCompleted = new ValidatedMethod({
+  name: 'todos.updatePomosCompleted',
+  validate: new SimpleSchema({
+    todoId: { type: String },
+    newNumber: { type: Number },
+  }).validator(),
+  run({ todoId, newNumber }) {
+    const todo = Todos.findOne(todoId);
+
+    if (!todo.editableBy(this.userId)) {
+      throw new Meteor.Error('api.todos.updatePomosCompleted.accessDenied',
+        'Cannot edit todos in a private list that is not yours');
+    }
+
+    Todos.update(todoId, {
+      $set: { pomosCompleted: newNumber },
+    });
+  },
+});
+
 export const remove = new ValidatedMethod({
   name: 'todos.remove',
   validate: new SimpleSchema({
@@ -105,6 +145,8 @@ const TODOS_METHODS = _.pluck([
   setCheckedStatus,
   updateText,
   remove,
+  updatePomosCompleted,
+  updatePomosEstimated,
 ], 'name');
 
 if (Meteor.isServer) {

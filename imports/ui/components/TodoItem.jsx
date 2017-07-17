@@ -9,6 +9,8 @@ import {
   setCheckedStatus,
   updateText,
   remove,
+  updatePomosEstimated,
+  updatePomosCompleted,
 } from '../../api/todos/methods.js';
 
 export default class TodoItem extends BaseComponent {
