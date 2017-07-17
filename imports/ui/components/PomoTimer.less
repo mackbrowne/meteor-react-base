@@ -1,1 +1,18 @@
 @import '{}/imports/ui/stylesheets/utils.less';
+
+.pomo-timer {
+  color: @color-primary; 
+  padding-left: 40px;
+}
+
+.text-blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.timer {
+  margin-bottom: 5px;
+}
