@@ -20,7 +20,7 @@ import {
 export default class ListHeader extends BaseComponent {
   constructor(props) {
     super(props);
-    this.state = Object.assign(this.state, { editing: false }, {pomosEstimated: 0});
+    this.state = Object.assign(this.state, { editing: false }, { pomosEstimated: 0 });
     this.onListFormSubmit = this.onListFormSubmit.bind(this);
     this.onListInputKeyUp = this.onListInputKeyUp.bind(this);
     this.onListInputBlur = this.onListInputBlur.bind(this);
@@ -99,7 +99,7 @@ export default class ListHeader extends BaseComponent {
   }
 
   pomoOnChange(event) {
-    this.setState({pomosEstimated: event.target.value})
+    this.setState({ pomosEstimated: event.target.value });
   }
 
   createTodo(event) {
@@ -227,7 +227,7 @@ export default class ListHeader extends BaseComponent {
               <option value="3" >3 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
               <option value="4" >4 {i18n.__('components.listHeader.selectEstimatedPomodoros')}</option>
             </select>
-          <span className="icon-arrow-down" />
+            <span className="icon-arrow-down" />
           </div>
         </form>
       </nav>
