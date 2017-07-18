@@ -102,6 +102,27 @@ export const updatePomosEstimated = new ValidatedMethod({
   },
 });
 
+export const pomosCompletedPlusPlus = new ValidatedMethod({
+  name: 'todos.pomosCompletedPlusPlus',
+  validate: new SimpleSchema({
+    todoId: { type: String },
+  }).validator(),
+  run({ todoId }) {
+    const todo = Todos.findOne(todoId);
+
+    if (!todo.editableBy(this.userId)) {
+      throw new Meteor.Error('api.todos.pomosCompletedPlusPlus.accessDenied',
+        'Cannot edit todos in a private list that is not yours');
+    }
+
+    const newNumber = todo.pomosCompleted ? todo.pomosCompleted + 1 : 1;
+
+    Todos.update(todoId, {
+      $set: { pomosCompleted: newNumber },
+    });
+  },
+});
+
 export const updatePomosCompleted = new ValidatedMethod({
   name: 'todos.updatePomosCompleted',
   validate: new SimpleSchema({

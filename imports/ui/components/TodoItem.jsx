@@ -32,6 +32,7 @@ export default class TodoItem extends BaseComponent {
     this.onBlur = this.onBlur.bind(this);
     this.updatePomosCompleted = this.updatePomosCompleted.bind(this);
     this.updatePomosEstimated = this.updatePomosEstimated.bind(this);
+    this.startTimer = this.startTimer.bind(this);
   }
 
   onFocus() {
@@ -47,6 +48,10 @@ export default class TodoItem extends BaseComponent {
       todoId: this.props.todo._id,
       newCheckedStatus: event.target.checked,
     });
+  }
+
+  startTimer() {
+    this.props.startTimer(this.props.todo._id);
   }
 
   updatePomosCompleted(event) {
@@ -91,17 +96,19 @@ export default class TodoItem extends BaseComponent {
           />
           <span className="checkbox-custom" />
         </label>
-        <input
-
-          className="pomo-input"
-          type="number"
-          name="pomosCompleted"
-          defaultValue={todo.pomosCompleted ? todo.pomosCompleted : '0'}
-          placeholder={todo.pomosCompleted ? todo.pomosCompleted : '0'}
-          onBlur={this.updatePomosCompleted}
-          min="0"
-          max="99"
-        />
+        { !this.props.timeRunning ?
+          <input
+            className="pomo-input"
+            type="number"
+            name="pomosCompleted"
+            defaultValue={todo.pomosCompleted ? todo.pomosCompleted : '0'}
+            placeholder={todo.pomosCompleted ? todo.pomosCompleted : '0'}
+            onBlur={this.updatePomosCompleted}
+            min="0"
+            max="99"
+          /> :
+          <div className="static-pomo" >{todo.pomosCompleted ? todo.pomosCompleted : '0'}</div>
+        }
         <div className="pomo-spacer">of</div>
         <input
 
@@ -123,14 +130,29 @@ export default class TodoItem extends BaseComponent {
           onBlur={this.onBlur}
           onChange={this.updateTodo}
         />
-        <a
-          className="delete-item"
-          href="#delete"
-          onClick={this.deleteTodo}
-          onMouseDown={this.deleteTodo}
-        >
-          <span className="icon-trash" />
-        </a>
+        {!this.props.timeRunning ?
+          <a
+            className="delete-item"
+            href="#delete"
+            onClick={this.deleteTodo}
+            onMouseDown={this.deleteTodo}
+          >
+            <span className="icon-trash" />
+          </a> :
+          ''
+        }
+
+        {!this.props.timeRunning ?
+          <button
+            type="button"
+            className="btn btn-primary btn-sm custom-button"
+            onClick={this.startTimer}
+          >
+            START
+            </button> :
+            ''
+        }
+
       </div>
     );
   }
@@ -140,4 +162,5 @@ TodoItem.propTypes = {
   todo: React.PropTypes.object,
   editing: React.PropTypes.bool,
   onEditingChange: React.PropTypes.func,
+  startTimer: React.PropTypes.func,
 };

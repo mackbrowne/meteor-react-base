@@ -18,9 +18,13 @@ export default class App extends React.Component {
     this.state = {
       menuOpen: false,
       showConnectionIssue: false,
+      todoPomoID: undefined,
+      timeRunning: false,
     };
     this.toggleMenu = this.toggleMenu.bind(this);
     this.logout = this.logout.bind(this);
+    this.startTimer = this.startTimer.bind(this);
+    this.toggleTimeRunning = this.toggleTimeRunning.bind(this);
   }
 
   componentDidMount() {
@@ -36,6 +40,15 @@ export default class App extends React.Component {
       const list = Lists.findOne();
       this.context.router.replace(`/lists/${list._id}`);
     }
+  }
+
+  toggleTimeRunning() {
+    this.setState({ timeRunning: !this.state.timeRunning });
+  }
+
+  startTimer(id) {
+    this.setState({ todoPomoID: id });
+    this.pomoTimer.startTimer();
   }
 
   toggleMenu(menuOpen = !Session.get('menuOpen')) {
@@ -74,6 +87,8 @@ export default class App extends React.Component {
     // have transitions
     const clonedChildren = children && React.cloneElement(children, {
       key: location.pathname,
+      startTimer: this.startTimer,
+      timeRunning: this.state.timeRunning,
     });
 
     return (
@@ -82,7 +97,12 @@ export default class App extends React.Component {
           <LanguageToggle />
           <UserMenu user={user} logout={this.logout} />
           <ListList lists={lists} />
-          <PomoTimer />
+          <PomoTimer
+            ref={(c) => { this.pomoTimer = c; }}
+            todoID={this.state.todoPomoID}
+            timeRunning={this.state.timeRunning}
+            toggleTimeRunning={this.toggleTimeRunning}
+          />
         </section>
         {showConnectionIssue && !connected
           ? <ConnectionNotification />

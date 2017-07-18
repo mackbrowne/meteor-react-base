@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+import {
+  pomosCompletedPlusPlus,
+} from '../../api/todos/methods.js';
+
 export default class PomoTimer extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +17,6 @@ export default class PomoTimer extends Component {
       seconds: 0,
       beepRunning: false,
       beeps: 0,
-      timeRunning: false,
       timeRemaining: 25 * 60 * 1000,
     };
 
@@ -60,9 +63,10 @@ export default class PomoTimer extends Component {
     // const timeRemaining = 25 * 60 * 1000;
     const timeRemaining = 11 * 1000;
     this.setState({
-      timeRunning: true,
       timeRemaining,
     });
+    this.props.toggleTimeRunning();
+
     // Clear Break timer and start pomodoro timer
     clearInterval(this.intervalIDTimer);
     this.intervalIDTimer = setInterval(this.countDownASecond.bind(this), 1000);
@@ -76,14 +80,22 @@ export default class PomoTimer extends Component {
     const timeRemaining = breakTime;
 
     this.setState({
-      timeRunning: false,
       beepRunning: false,
       beeps: 0,
       timeRemaining,
     });
 
+    this.props.toggleTimeRunning();
+
     // Start break timer
     this.intervalIDTimer = setInterval(this.countDownASecond.bind(this), 1000);
+
+    // increment pomosCompleted only if the timer actually finished and a todo was selected
+    if (this.state.timeRemaining < 1 && this.props.todoID) {
+      pomosCompletedPlusPlus.call({
+        todoId: this.props.todoID,
+      });
+    }
   }
 
   render() {
@@ -100,7 +112,7 @@ export default class PomoTimer extends Component {
           </h2>
         </div>
         <div>
-          {!this.state.timeRunning ?
+          {!this.props.timeRunning ?
             <button
               type="button"
               className="btn btn-primary btn-md"
@@ -121,3 +133,10 @@ export default class PomoTimer extends Component {
     );
   }
 }
+
+PomoTimer.propTypes = {
+  todoID: React.PropTypes.string,
+  timeRunning: React.PropTypes.bool,
+
+  toggleTimeRunning: React.PropTypes.func,
+};

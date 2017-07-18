@@ -20,7 +20,7 @@ export default class ListPage extends BaseComponent {
   }
 
   render() {
-    const { list, listExists, loading, todos } = this.props;
+    const { list, listExists, loading, todos, startTimer, timeRunning } = this.props;
     const { editingTodo } = this.state;
 
     if (!listExists) {
@@ -42,6 +42,8 @@ export default class ListPage extends BaseComponent {
           key={todo._id}
           editing={todo._id === editingTodo}
           onEditingChange={this.onEditingChange}
+          startTimer={startTimer}
+          timeRunning={timeRunning}
         />
       ));
     }
