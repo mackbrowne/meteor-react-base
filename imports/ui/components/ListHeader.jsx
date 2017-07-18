@@ -113,6 +113,7 @@ export default class ListHeader extends BaseComponent {
       }, displayError);
       input.value = '';
     }
+    this.setState({ pomosEstimated: 0});
   }
 
   focusTodoInput() {
